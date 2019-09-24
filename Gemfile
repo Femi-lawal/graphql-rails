@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-
+ENV['HTTP_PROXY'] = 'http://christian.ironuma:Abuja128@10.100.21.9:8080' 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use postgresql as the database for Active Record
@@ -54,7 +54,10 @@ gem 'factory_girl_rails'
 gem 'capybara'
 gem 'database_cleaner'    
 
+gem 'bootstrap-sass', '3.3.7'
+gem 'bootstrap-will_paginate', '1.0.0'
 
+gem 'tether-rails'
 gem 'redis'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
