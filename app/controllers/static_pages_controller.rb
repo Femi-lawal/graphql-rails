@@ -19,12 +19,16 @@ class StaticPagesController < ApplicationController
         uri = URI(url)
           
         response = Net::HTTP.get(uri)
-        render json: JSON.parse(response)
+        render json: JSON.parse(response), status: 200
     #   response = RestClient::Request.execute(
     #   method: :get,
     #   url: 'https://api.coindesk.com/v1/bpi/currentprice/USD.json'
     #   )          
     #   return JSON.parse(response)         
+    end
+
+    def okay 
+        render :json => {:success => true, :data => 'data'}    
     end
 
   end
