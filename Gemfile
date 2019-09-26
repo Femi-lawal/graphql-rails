@@ -53,7 +53,7 @@ gem 'factory_girl_rails'
 gem 'capybara'
 gem 'database_cleaner'    
 
-gem 'bootstrap-sass', '3.3.7'
+gem 'bootstrap-sass', '3.4.1'
 gem 'bootstrap-will_paginate', '1.0.0'
 
 gem 'tether-rails'
